@@ -28,7 +28,17 @@ $(function () {
    // }
    // elementOut('mainText', 3000);
 
-   $('.mainText h2').fadeTo(2000, 0.2).fadeTo(3000, 1);
-   $('.mainText p').slideUp(2000).slideDown(1000);
+   //========================================================================
 
+   // $('.mainText h2').fadeTo(2000, 0.2).fadeTo(3000, 1);
+   // $('.mainText p').slideUp(2000).slideDown(1000);
+
+
+   //==============================================================================
+
+   function changeAttr(element, newAttr, newValue) {
+      var className = '.' + element;
+      $(className).attr(newAttr, newValue);
+   }
+   changeAttr('logo', 'title', 'some new text')
 });
